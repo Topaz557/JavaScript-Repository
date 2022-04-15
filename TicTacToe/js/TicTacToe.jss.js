@@ -14,11 +14,11 @@ function placeXOrO (squareNumber) {
         //this condition checks who's turn it is
         if (activePlayer === 'X') {
             //if active player is equal to "X" the x.png is placed in HTML.
-            select.style.backgroundImage = 'url("images/X.png")';
+            select.style.backgroundImage = 'url("images/dog.png")';
             //Active player may ionly be X or O so, if not X it must be O
         } else {
             //if activePlayer is equal to o the o png is placed in html
-            select.style.backgroundImage = 'url("images/O.png")';
+            select.style.backgroundImage = 'url("images/cat.png")';
         }
         //square number and active player are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
@@ -34,7 +34,7 @@ function placeXOrO (squareNumber) {
             activePlayer = 'X';
         }
         //this function plays placement sound.
-        audio('../media/place.mp3');
+        audio('./media/robo.mp3');
         //this condition checks to see if it is computers turn
         if (activePlayer ==='O'){
             //this function disables clicking for computer choice.
@@ -88,7 +88,7 @@ function checkWinConditions() {
     //squares are selected the code executes.
     else if (selectedSquares.length >= 9) {
         //this function plays the tie game sound
-        audio('../media/tie.mp3')
+        audio('./media/flute.wav')
         //this function sets a .3 second timer before the reset game is called
         setTimeout(function()  { resetGame(); }, 1000);
     }
@@ -103,6 +103,7 @@ function checkWinConditions() {
         //returned and our else if condition executes the drawline function
         if (a === true && b === true && c === true)  { return true }
     }
+}
     //this function makes our body element temporarily unclickable
     function disableClick() {
         //this makes our body unclickable
@@ -184,10 +185,19 @@ function checkWinConditions() {
         //thjis line disawllows clicking while the win sound is playing
         disableClick();
         //this line palys the win sounds
-        audio ('../media/winGame.mp3');
+        audio ('./media/violin.wav');
         //this line calls our main animation loop
         animateLineDrawing();
         //this line waits 1 second. then, clears canvas, resets game, and allows clicking agian
         setTimeout(function () { clear(); resetGame(); }, 1000);
+     }
+     function resetGame() {
+         //this for loop iterates through each HTMl square element
+         for (let i = 0; i < 9; i++)  {
+             //this variable gets the html element of i
+             let square = document.getElementById(String(i))
+             square.style.backgroundImage = ''
+         }
+         selectedSquares = [];
     }
-}
+
