@@ -163,7 +163,7 @@ function checkWinConditions() {
             if (y < y2) { y += 10; }
             //this condition cancels our animation loop
             //if we've reach the end points
-            if (x >- x2 && y>= y2) { cancelAnimationFrame (animationLoop); }  
+            if (x >= x2 && y>= y2) { cancelAnimationFrame (animationLoop); }  
         }
         //this condition is similiar to the one above
         //this is necessary for the 6, 4, 2 win condition
