@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<link rel="stylesheet" type="text/css" href="CSS_Table.css">
+	<!-- NAV -->
+	<nav>
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#websites"><li>Websites</li></a>
+					<a href="#contact"><li>Contact Us</li></a>
+				</ul>
+			</div>
+		</div>
+	</nav>	
+		<!-- End Nav -->
+			<!-- Home -->
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main"> Car Finder Websites </span>
+				</div>
+			</div>
+		</div>
+		<!-- End Home -->
+		<!-- Lightbox-->
+		<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="images0/carimage_0.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" height="150px" width="150px">
+	</div>
+	<div class="column">
+	  <img src="images0/carimage_1.png" onclick="openModal();currentSlide(2)" class="hover-shadow" height="300px" width="300px">
+	</div>
+	<div class="column">
+	  <img src="images0/carimage_2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="300px" width="300px">
+	</div>
+	<div class="column">
+	  <img src="images0/carimage_3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="300px" width="300px">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="images0/carimage_0.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="images0/carimage_1.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="images0/carimage_2.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="images0/carimage_3.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="images0/carimage_0.jpg" onclick="currentSlide(1)" alt="AutoTrader" height="300px" width="300px">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images0/carimage_1.png" onclick="currentSlide(2)" alt="CarGurus" height="300px" width="300px">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images0/carimage_2.jpg" onclick="currentSlide(3)" alt="Bring A Trailer" height="300px" width="300px">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images0/carimage_3.jpg" onclick="currentSlide(4)" alt="500hp Plus" height="300px" width="300px">
+	  </div>
+	</div>
+  </div>
+	<!-- Websites -->
+		<section id="websites">
+			<div class="container">
+				<h1> Websites</h1>
+					<div class="flex-container">
+		
+		
+		<table style="width:100%">
+			<tr>
+				<th>Name</th>
+				<th>URL</th>
+				<th style="text-align:center-right"> Notes</th>
+			</tr>
+			<tr>
+				<td style="text-align:center">Auto Trader</td>
+				<td style="text-align:center"><a href="https://www.autotrader.com/" target="_blank"> Autotrader's Website</a></td>
+				<td style="text-align:center">Established website with many listings, used generally for cars from brand new to 10-15 years used. Both dealers and private sellers can be found here.</td>
+				<td><img src="images0/carimage_0.jpg" height="100" width="100" alt="Auto Trader Logo"></td>
+			</tr>
+			<tr>
+				<td style="text-align:center">Car Gurus</td>
+				<td style="text-align:center"><a href="https://www.cargurus.com/" target="_blank"> CarGuru's Website</a></td>
+				<td style="text-align:center"> Another established website that has been around for many years that is used to locate cars from brand new to 10-15 years old. Once again both dealers and private sellers will be listed here.</td>
+				<td><img src="images0/carimage_1.png" height="100" width="100" alt="Car Guru's Logo"></td>
+			</tr>
+			<tr>
+				<td style="text-align:center">Bring A Trailer (BaT)</td>
+				<td style="text-align:center"><a href="https://bringatrailer.com/" target="_blank"> BaT's Website</a></td>
+				<td style="text-align:center"> Used car website, specalizes in finding hard to find older vehicles as well as high-end/rare cars. Used commonly for imports and high-horsepower builds as well. Both private sellers and dealers are able to list vehicles here. </td>
+				<td><img src="images0/carimage_2.jpg" height="100" width="100" alt="Bring A Trailer Logo"></td>
+			</tr>
+			<tr>
+				<td style="text-align:center">500+ Hp for sale</td>
+				<td style="text-align:center"><a href="https://500plushpforsale.com/" target="_blank"> 500hp+ Website</a></td>
+				<td style="text-align:center"> Website used for finding 500+ horsepower builds. Both private and dealer sales take place here, however dealer sales are harder to find typically. 
+				<td><img src="images0/carimage_3.jpg" height="100" width="100" alt="500hp+ Image/Slogan"></td>
+			</tr>
+		</table>
+			</div>
+			</div>
+		</section>
+		 <!-- End Websites-->
+		 <!--Contact Us-->
+		 <section>
+			<div id="contact">
+				<div>
+		<h2><span> Your new car is around the corner.</span>
+							<br  />Uncertain which website is for you? Reach out and we would be happy to guide you!
+						</h2>
+						<p>
+							Please provide us with your basic contact information.
+						</p>
+						<div>
+							<form action="" method="post">
+								<label>Name:</label>
+									<input type="text" placeholder="Please enter your name here">
+								<label>Email:</label>
+									<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+								<label>Message:</label>
+									<input type="text" id="Message" name="Message" placeholder="Please write your message here">
+								<label> Style of car:</label>
+									<input type="text" id="Message" name="Message" placeholder="Please write the style of cars considered">
+								<div class="form-spacer">
+								</div>
+								<div>
+									<input type="Submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<p> If you are interested in learning more about different types of automotives, repairs, and rally types please view the below videos.</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/loMKMfj-rSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<t> The above video is about the "Killer B Rally series", a very interesting part of automotive history and one of the reasons we have so many safety features for different classes in today's automotive sports.</t>
+		<footer> This website is a comprehensive list of websites that are used for the selling and purchasing of used/new cars. Please note this website is only a list, and does not have the ability to search for used cars itself. Instead it is merely a guide to help you find the right place/places to either list or purchase a car. </footer>
+		<script src="js/Pet Java.js" ></script>
+	</body>
+</html>
